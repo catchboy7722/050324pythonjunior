@@ -2,3 +2,4 @@ fahrenheit = float(input("Введіть градуси за Фаренгейт�
 celsius = int((fahrenheit - 32) * 5 / 9)
 print("Градусів Цельсія:", celsius)
 
+
