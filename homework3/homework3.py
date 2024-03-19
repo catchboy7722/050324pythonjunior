@@ -1,23 +1,13 @@
-def calculator():
-    num1 = float(input("Введіть перше число: "))
-    operator = input("Введіть математичну операцію (+, -, *, /): ")
-    num2 = float(input("Введіть друге число: "))
+time = int(input("Введіть час (година від 0 до 23): "))
+amount = float(input("Введіть суму до сплати: "))
 
-    if operator == '+':
-        result = num1 + num2
-    elif operator == '-':
-        result = num1 - num2
-    elif operator == '*':
-        result = num1 * num2
-    elif operator == '/':
-        if num2 != 0:
-            result = num1 / num2
-        else:
-            return "Помилка: ділення на нуль"
-    else:
-        return "Помилка: непідтримувана операція"
-
-    return result
+if 20 <= time <= 22:
+    amount /= 2
+    print("Сума зі знижкою: ", amount)
+elif 8 <= time <= 19:
+    print("Разом до сплати: ", amount)
+else:
 
 
-print(calculator())
+    print("Магазин не працює!")
+
